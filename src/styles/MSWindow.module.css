@@ -1,0 +1,24 @@
+.msWindow {
+    position: fixed;
+    background-color: var(--window-bg);
+    border: 1px solid #000000;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.msWindowTitlebar {
+    background-image: linear-gradient(
+        to right,
+        var(--titlebar-gradient-start),
+        var(--titlebar-gradient-end)
+    );
+    padding: 4px;
+    color: #ffffff;
+    user-select: none;
+    font-weight: bold;
+    font-size: 12pt;
+    cursor: move;
+}
+
+.msWindowBody {
+    padding: 8px;
+} 

@@ -1,0 +1,35 @@
+@font-face {
+    font-family: "MS Sans Serif";
+    src: url("/assets/fonts/micross.ttf") format("truetype");
+}
+
+:root {
+    --window-bg: #d4d0c8;
+    --titlebar-gradient-start: #0a246a;
+    --titlebar-gradient-end: #a6caf0;
+}
+
+body {
+    font-family: "MS Sans Serif", sans-serif;
+    background-color: #3A6EA5;
+    font-size: 8pt;
+    margin: 0;
+    padding: 0;
+}
+
+button, input {
+    border-radius: 0;
+    font-family: inherit;
+}
+
+button {
+    background-color: var(--window-bg);
+}
+
+input[type="text"] {
+    background-color: #ffffff;
+}
+
+input[type="text"]:focus-visible {
+    outline: none;
+} 
