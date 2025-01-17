@@ -1,0 +1,32 @@
+.logonWindowLogo {
+    background-color: #ffffff;
+    margin: 0;
+    padding: 2.5rem 0;
+    border-bottom: 8px solid;
+    border-image: linear-gradient(to right, #013755, #9ec0da, #013755) 4;
+    text-align: center;
+}
+
+.logonForm {
+    margin-top: 25px;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.logonForm div {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.logonForm input {
+    margin-left: auto;
+    width: 300px;
+    margin-right: 90px;
+}
+
+.logonForm button {
+    align-self: flex-end;
+    margin-right: 90px;
+} 

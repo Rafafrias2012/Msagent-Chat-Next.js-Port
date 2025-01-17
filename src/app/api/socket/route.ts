@@ -1,9 +1,10 @@
-import { WebSocket, WebSocketServer } from 'ws';
+import type { WebSocket } from 'ws';
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 import { MSAgentChatRoom } from '@/lib/chatroom';
+import { Client } from '@/lib/client';
 
-const wss = new WebSocketServer({ noServer: true });
+const wss = new (require('ws').WebSocketServer)({ noServer: true });
 const chatRoom = new MSAgentChatRoom();
 
 wss.on('connection', (ws: WebSocket) => {
